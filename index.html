@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RD Interview Portal</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="./images/microphone.jpg" alt="microphone">
+            <label id="logo-name">interview portal</label>
+        </div>
+        <ul class="links">
+            <li><a href="#">feedback</a></li>
+            <li><a href="#">my feedbacks</a></li>
+        </ul>
+        <div class="user">
+            <label id="user-name">welcome aniket kumar singh - technical interviewer</label>
+            <img id="user-image" src="./images/user.jpeg" alt="user">
+        </div>
+    </nav>
+    <div class="container">
+        <div class="heading">
+            <h1>technical feedback</h1>
+        </div>
+        <div class="content">
+            <div class="left">
+                <ul class="candidate-info">
+                    <li id='candidate-name'>Amit Deep Singh</li>
+                    <li class="rounds">Round-2 Marks</li>
+                    <li>MCQ's: 6/10</li>
+                    <li>Coding Challenge-1: <span>0/20</span></li>
+                    <li>Coding Challenge-2: <span>35/35</span></li>
+                    <li>Coding Challenge-3: <span>40/35</span></li>
+                    <li class="total">Total: <span>76/100</span></li>
+                    <li class="rounds">Round-1 Marks</li>
+                    <li>MCQ's: 6/10</li>
+                    <li>Coding Challenge-1: <span>0/20</span></li>
+                    <li>Coding Challenge-2: <span>35/35</span></li>
+                    <li>Coding Challenge-3: <span>40/35</span></li>
+                    <li class="total" id="last">Total: <span>76/100</span></li>
+                </ul>
+            </div>
+            <div class="right">
+                <div class="reference">
+                    <p id="legend">Legend</p>
+                    <p id="score"><span>Overall Score: </span> 1- Bad; 2- Neutral; 3- Good; 4- Very Good; 5- Excellent</p>
+                </div>
+                <div class="icons">
+                    <a href="/interview" class="icon-link" id="icon-link-1"><div><img id="interview" src="./images/interview.jpeg" alt="interview"></div><i class="fa fa-sort-asc" style="font-size:24px"></i></a>
+                    <a href="/document1" class="icon-link" id="icon-link-2"><div><img id="document1" src="./images/document.jpeg" alt="document"></div><i class="fa fa-sort-asc" style="font-size:24px"></i></a>
+                    <a href="/document2" class="icon-link" id="icon-link-3"><div><img id="document2" src="./images/document.jpeg" alt="document"></div><i class="fa fa-sort-asc" style="font-size:24px"></i></a>
+                    <a href="/details" class="icon-link" id="icon-link-4"><div><img id="details" src="./images/details.jpeg" alt="details"></div><i class="fa fa-sort-asc" style="font-size:24px"></i></a>
+                    <a href="/conference" class="icon-link" id="icon-link-5"><div><img id="conference" src="./images/conference.jpeg" alt="conference"></div><i class="fa fa-sort-asc" style="font-size:24px"></i></a>
+                    <a href="/operator" class="icon-link" id="icon-link-6"><div><img id="operator" src="./images/operator.jpeg" alt="operator"></div><i class="fa fa-sort-asc" style="font-size:24px"></i></a>
+                </div>
+                <div id="display">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

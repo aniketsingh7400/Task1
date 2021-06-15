@@ -1,0 +1,358 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #464547;
+}
+
+.container {
+  padding-top: 60px;
+}
+
+/* ###################### LOGO - LABEL ######################### */
+
+.logo {
+  float: left;
+  padding-left: 30px;
+  background: #292828;
+  cursor: pointer;
+}
+
+#logo-name {
+  margin-left: 35px;
+  cursor: pointer;
+}
+
+/* ###################### USER - LABEL ######################### */
+
+.user {
+  float: right;
+  margin-right: 60px;
+  cursor: pointer;
+}
+
+#user-name {
+  text-transform: capitalize;
+  font-size: 0.9vw;
+  cursor: pointer;
+}
+
+/* ###################### NAV - LABEL & IMAGE ######################### */
+
+nav label {
+  color: white;
+  font-size: 1.1vw;
+  line-height: 60px;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  margin-top: 10px;
+}
+
+#user-image {
+  border: white 1px solid;
+}
+
+/* ###################### NAVBAR ######################### */
+
+nav {
+  width: 100%;
+  background: #434244;
+  height: 60px;
+  text-transform: uppercase;
+  font-weight: 500;
+  position: fixed;
+  z-index: 2;
+}
+
+nav ul {
+  float: left;
+}
+
+nav ul li {
+  position: relative;
+  display: inline-block;
+  line-height: 60px;
+  list-style: none;
+}
+
+nav ul li a {
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 0.9vw;
+}
+
+label {
+  padding: 0px 10px;
+}
+
+.links li a:hover {
+  color: #434244;
+  font-weight: bold;
+  background: #fff;
+  transition: all 0.3s ease 0s;
+}
+
+/* ###################### HEADING ######################### */
+
+.heading {
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.heading h1 {
+  position: absolute;
+  text-transform: uppercase;
+  color: #464547;
+  font-size: 1.1vw;
+  font-weight: bold;
+  line-height: 60px;
+  margin-left: 0.4vw;
+}
+
+/* ###################### CONTENT ######################### */
+
+.content {
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1em;
+}
+
+/* ###################### LEFT CONTENT ######################### */
+
+.left {
+  width: 15.5%;
+}
+
+.left ul li {
+  padding: 15px;
+  list-style: none;
+  color: #464547;
+  font-size: 0.9vw;
+  border: 1px solid lightgrey;
+  border-bottom: none;
+}
+
+.left ul #candidate-name {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: white;
+  font-weight: bold;
+  background: #39c2d7;
+}
+
+.left ul .rounds {
+  font-weight: bold;
+}
+
+.left ul .total {
+  color: black;
+  background: #a2db37;
+  font-weight: bold;
+}
+
+.left ul li span {
+  color: #a2db37;
+  font-weight: bold;
+}
+
+.left ul .total span {
+  color: black;
+}
+
+#last {
+  border-bottom: lightgrey;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* ###################### RIGHT CONTENT ######################### */
+
+.right {
+  width: 83%;
+}
+
+.reference {
+  width: 100%;
+}
+
+.reference p {
+  font-size: 0.9vw;
+  padding: 10px;
+  border: 1px solid lightgray;
+}
+
+#legend {
+  background: lightgray;
+  font-weight: bold;
+}
+
+#score span {
+  font-weight: bold;
+}
+
+.icons {
+  width: 100%;
+  height: fit-content;
+  margin-top: 50px;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.icons a {
+  position: relative;
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  justify-content: center;
+}
+
+.icons a div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.icons a img {
+  height: 60px;
+  width: 60px;
+  transition: all 0.3s ease;
+}
+
+#interview {
+  border: 2px solid #a2db37;
+}
+
+#document1,
+#document2 {
+  border: 2px solid rgb(231, 231, 46);
+}
+
+#details {
+  border: 2px solid #0077b3;
+}
+
+#conference,
+#operator {
+  border: 2px solid #d16855;
+}
+
+i {
+  visibility: hidden;
+  left: 44%;
+  position: absolute;
+  bottom: -14px;
+  color: lightgray;
+  transition: all 0.1s ease;
+}
+
+.icons a:hover i {
+  visibility: visible;
+}
+
+.icons a div:hover > #interview,
+.icons a div:hover > #document1,
+.icons a div:hover > #document2,
+.icons a div:hover > #details,
+.icons a div:hover > #conference,
+.icons a div:hover > #operator {
+  transform: scale(1.2);
+  border: 2px solid lightgray;
+  transition: all 0.1s ease;
+}
+
+.active i {
+  visibility: visible;
+}
+
+.active #interview,
+.active #document1,
+.active #document2,
+.active #details,
+.active #conference,
+.active #operator {
+  transform: scale(1.2);
+  border: 2px solid lightgray;
+  transition: all 0.1s ease;
+}
+
+/* ###################### TECHNICAL EVALUATION ######################### */
+
+.form-heading {
+  margin-bottom: 40px;
+}
+
+.form-heading p {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.form {
+  font-size: 0.9vw;
+}
+
+#mandatory {
+  padding-left: 4px;
+  color: red;
+}
+
+.row span {
+  font-style: normal;
+  font-weight: bold;
+  margin-right: 0.3vw;
+}
+
+.row div {
+  font-style: italic;
+}
+
+.row label {
+  font-style: normal;
+}
+
+.row {
+  margin: 30px 0;
+  display: flex;
+}
+
+.part1 {
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+
+.part2 {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.part3 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 40%;
+}
+
+.part3 textarea {
+  width: 60%;
+}
